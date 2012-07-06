@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_cgrAMMdvEeGWG7t0Aij95g">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_r0f6IMdwEeGWG7t0Aij95g" featurename="descriptors" parentElementId="org.eclipse.e4.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_2Nvl4MdwEeGWG7t0Aij95g" elementId="com.sample.partdescriptor.navigation" label="Navigation" iconURI="platform:/plugin/com.sample.fragment.view//icons/application_side_tree.png" category="com.sample" contributionURI="bundleclass://com.sample.fragment.view/com.sample.fragment.view.Navigation"/>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_G3PSQMdyEeGWG7t0Aij95g" elementId="com.sample.partdescriptor.editors" label="Editors" iconURI="platform:/plugin/com.sample.fragment.view//icons/page_edit.png" category="com.sample" contributionURI="bundleclass://com.sample.fragment.view/com.sample.fragment.view.Editors"/>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_UhmwgMdyEeGWG7t0Aij95g" elementId="com.sample.partdescriptors.tasks" label="Tasks" iconURI="platform:/plugin/com.sample.fragment.view//icons/text_list_numbers.png" category="com.sample" contributionURI="bundleclass://com.sample.fragment.view/com.sample.fragment.view.Tasks"/>
+  </fragments>
+</fragment:ModelFragments>

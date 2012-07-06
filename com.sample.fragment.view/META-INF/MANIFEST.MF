@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: View
+Bundle-SymbolicName: com.sample.fragment.view
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.sample.fragment.view.Activator
+Bundle-Vendor: SAMPLE
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.e4.ui.di,
+ javax.inject
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
