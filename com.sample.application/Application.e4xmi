@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_Ct-eMMdvEeGWG7t0Aij95g" elementId="org.eclipse.e4.ide.application" bindingContexts="_Ct-eMcdvEeGWG7t0Aij95g">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_Ct-eR8dvEeGWG7t0Aij95g" elementId="com.sample.window.main" label="Main Window" width="500" height="400">
-    <children xsi:type="advanced:PerspectiveStack" xmi:id="_Ct-eT8dvEeGWG7t0Aij95g" elementId="com.sample.perspectivestack.main">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_Ct-eT8dvEeGWG7t0Aij95g" elementId="com.sample.perspectivestack.main" selectedElement="_Ct-eUMdvEeGWG7t0Aij95g">
       <children xsi:type="advanced:Perspective" xmi:id="_Ct-eUMdvEeGWG7t0Aij95g" elementId="com.sample.perspective.welcome">
         <children xsi:type="basic:PartSashContainer" xmi:id="_Ct-eUcdvEeGWG7t0Aij95g">
           <children xsi:type="basic:PartStack" xmi:id="_Ct-eUsdvEeGWG7t0Aij95g"/>
@@ -18,11 +18,18 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_Ct-eTsdvEeGWG7t0Aij95g" label="About" command="_Ct-eRMdvEeGWG7t0Aij95g"/>
       </children>
     </mainMenu>
-    <trimBars xmi:id="_Ct-eU8dvEeGWG7t0Aij95g">
-      <children xsi:type="menu:ToolBar" xmi:id="_Ct-eVMdvEeGWG7t0Aij95g" elementId="toolbar:org.eclipse.ui.main.toolbar">
+    <trimBars xmi:id="_Ct-eU8dvEeGWG7t0Aij95g" elementId="org.eclipse.ui.main.toolbar">
+      <children xsi:type="menu:ToolBar" xmi:id="_Ct-eVMdvEeGWG7t0Aij95g" elementId="file">
         <children xsi:type="menu:HandledToolItem" xmi:id="_Ct-eVcdvEeGWG7t0Aij95g" iconURI="platform:/plugin/com.sample.application/icons/sample.gif" command="_Ct-ePsdvEeGWG7t0Aij95g"/>
         <children xsi:type="menu:HandledToolItem" xmi:id="_Ct-eVsdvEeGWG7t0Aij95g" iconURI="platform:/plugin/com.sample.application/icons/save_edit.gif" command="_Ct-eQcdvEeGWG7t0Aij95g"/>
       </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_d5F4wMd8EeG969byIQLukw" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+        <tags>stretch</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_e3bJQMd8EeG969byIQLukw" elementId="Spacer Glue" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+        <tags>glue</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_BwaMQMd7EeG969byIQLukw" elementId="PerspectiveSwitcher" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcher"/>
     </trimBars>
   </children>
   <handlers xmi:id="_Ct-eO8dvEeGWG7t0Aij95g" contributionURI="bundleclass://com.sample.application/com.sample.application.handlers.QuitHandler" command="_Ct-eOsdvEeGWG7t0Aij95g"/>
@@ -49,4 +56,7 @@
   <addons xmi:id="_Ct-eN8dvEeGWG7t0Aij95g" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
   <addons xmi:id="_Ct-eOMdvEeGWG7t0Aij95g" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_Ct-eOcdvEeGWG7t0Aij95g" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_WY5TMMd7EeG969byIQLukw" elementId="Cleanup Addon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.cleanupaddon.CleanupAddon"/>
+  <addons xmi:id="_cp4wIMd7EeG969byIQLukw" elementId="DnD Addon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon"/>
+  <addons xmi:id="_gNOUAMd7EeG969byIQLukw" elementId="MinMax Addon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
 </application:Application>
