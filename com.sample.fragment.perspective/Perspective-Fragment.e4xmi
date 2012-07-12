@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="ASCII"?>
-<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_gEoPIMdvEeGWG7t0Aij95g">
-  <imports xsi:type="basic:PartDescriptor" xmi:id="_ugDfcMeGEeG969byIQLukw" elementId="com.sample.partdescriptor.navigation"/>
-  <imports xsi:type="basic:PartDescriptor" xmi:id="_84B1IMeHEeG969byIQLukw" elementId="com.sample.partdescriptor.editors"/>
-  <imports xsi:type="basic:PartDescriptor" xmi:id="_-uGl8MeHEeG969byIQLukw" elementId="com.sample.partdescriptors.tasks"/>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gEoPIMdvEeGWG7t0Aij95g">
+  <imports xsi:type="commands:Command" xmi:id="_KbO-4MleEeG8yZF0G2c9MA" elementId="test.commands.testcom"/>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4n5woMdvEeGWG7t0Aij95g" featurename="children" parentElementId="com.sample.perspectivestack.main" positionInList="first">
     <elements xsi:type="advanced:Perspective" xmi:id="_C3z6MMdwEeGWG7t0Aij95g" elementId="com.sample.perspective.workflow" label="Workflow">
-      <children xsi:type="basic_1:PartSashContainer" xmi:id="_H0nycMdwEeGWG7t0Aij95g" horizontal="true">
-        <children xsi:type="basic_1:PartStack" xmi:id="_mF5YkMdwEeGWG7t0Aij95g" elementId="com.sample.workflow.parts.navigation">
-          <children xsi:type="advanced:Placeholder" xmi:id="_ZctWkMeIEeG969byIQLukw" elementId="navigation"/>
+      <children xsi:type="basic:PartSashContainer" xmi:id="_H0nycMdwEeGWG7t0Aij95g" horizontal="true">
+        <children xsi:type="basic:PartStack" xmi:id="_mF5YkMdwEeGWG7t0Aij95g" elementId="com.sample.workflow.parts.navigation">
+          <children xsi:type="advanced:Placeholder" xmi:id="_jLTcoMelEeG969byIQLukw"/>
         </children>
-        <children xsi:type="basic_1:PartSashContainer" xmi:id="_IvTSAMdwEeGWG7t0Aij95g">
-          <children xsi:type="basic_1:PartStack" xmi:id="_NF_lcMdwEeGWG7t0Aij95g" elementId="com.sample.workflow.parts.editos"/>
-          <children xsi:type="basic_1:PartStack" xmi:id="_NZ1ugMdwEeGWG7t0Aij95g" elementId="com.sample.workflow.parts.status"/>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_IvTSAMdwEeGWG7t0Aij95g">
+          <children xsi:type="basic:PartStack" xmi:id="_NF_lcMdwEeGWG7t0Aij95g" elementId="com.sample.workflow.parts.editos"/>
+          <children xsi:type="basic:PartStack" xmi:id="_NZ1ugMdwEeGWG7t0Aij95g" elementId="com.sample.workflow.parts.status"/>
         </children>
       </children>
     </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_oojPAMfSEeGfJYipRA2Hbw" featurename="handlers" parentElementId="org.eclipse.e4.ide.application">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_SNGYsMleEeG8yZF0G2c9MA" elementId="test.handlers.testhand" label="Test Handler" command="_KbO-4MleEeG8yZF0G2c9MA"/>
   </fragments>
 </fragment:ModelFragments>
